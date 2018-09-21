@@ -1090,7 +1090,11 @@ MonoBehaviour:
   m_HorizontalAxis: H_LStick1
   m_VerticalAxis: V_LStick1
   m_SubmitButton: AButton1
+<<<<<<< HEAD
   m_CancelButton: BButton
+=======
+  m_CancelButton: BButton1
+>>>>>>> Player_Menu
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
