@@ -7,7 +7,6 @@ public class Environment_Movement : MonoBehaviour {
     /* attach to moveable object
      * set tran
      * 
-     * 
      */
 
     public KeyCode activationButton;
@@ -41,7 +40,7 @@ public class Environment_Movement : MonoBehaviour {
         {
             // update player pos
             gameObject.transform.position = Vector3.Lerp(transform.position, objectPositions[pos].position, t_lerp);
-
+            gameObject.transform.rotation = Quaternion.Lerp(transform.rotation, objectPositions[pos].rotation, t_lerp);
             // timer
             t_lerp += Time.deltaTime * Speed;
 

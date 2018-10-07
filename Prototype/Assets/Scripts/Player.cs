@@ -41,7 +41,7 @@ public class Player : MonoBehaviour {
 		{
             //playerDirection.z += 45;
 			transform.rotation = Quaternion.LookRotation(playerDirection, Vector3.up) ;
-            transform.rotation = Quaternion.Euler(0, 45 + transform.rotation.eulerAngles.y, 0);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
         }
 
