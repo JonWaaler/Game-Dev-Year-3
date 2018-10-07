@@ -32,11 +32,14 @@ public class UI_Manager : MonoBehaviour {
 			fade += Time.deltaTime;
 
 		PressA.alpha = fade;
+<<<<<<< HEAD
+=======
 
 		if (characterselect.activeInHierarchy && Input.GetButtonDown("AButton1"))
 		{
 			SceneManager.LoadScene(1);
 		}
+>>>>>>> Player_Menu
 	}
 
 	public void Play()

@@ -12,11 +12,10 @@ public class Player : MonoBehaviour {
 	public float speed;
 	public string H_LS_PNum, V_LS_PNum, H_RS_PNum, V_RS_PNum;
 
-
 	// Use this for initialization
 	void Start () {
-
-    }
+		
+	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -34,16 +33,21 @@ public class Player : MonoBehaviour {
 			GetComponent<Rigidbody>().AddForce(inputVector.normalized * speed);
 		}
 
-		GetComponent<Rigidbody>().velocity = new Vector3 (speed * xVel, -9.8f, speed * yVel);
+		GetComponent<Rigidbody>().velocity = new Vector3 (speed * xVel, 0f, speed * yVel);
 
 		Vector3 playerDirection = Vector3.right * Input.GetAxisRaw(H_RS_PNum) + Vector3.forward * -Input.GetAxisRaw(V_RS_PNum);
 		if(playerDirection.sqrMagnitude > 0.0f)
 		{
+<<<<<<< HEAD
             //playerDirection.z += 45;
 			transform.rotation = Quaternion.LookRotation(playerDirection, Vector3.up) ;
             transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
         }
+=======
+			transform.rotation = Quaternion.LookRotation(playerDirection, Vector3.up);
+		}
+>>>>>>> master
 
 
 	}
